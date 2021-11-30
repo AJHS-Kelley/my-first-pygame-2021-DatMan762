@@ -1,4 +1,4 @@
- # My First PyGame, Bernard Samuels, 11/30/21, 2:14, v0.4
+ # My First PyGame, Bernard Samuels, 11/30/21, 2:14, v0.5
 
  import pygame, sys 
  from pygame.locals import *
@@ -24,3 +24,6 @@
    textRect.centerx = windowSurface.get_rect().centerx
    textRect.centerx = windowSurface.get_rect().centery
    
+
+   # Draw the game background 
+   windowSurface.fill(LAVARED)
