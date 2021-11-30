@@ -1,4 +1,4 @@
- # My First PyGame, Bernard Samuels, 11/30/21, 2:14, v0.3
+ # My First PyGame, Bernard Samuels, 11/30/21, 2:14, v0.4
 
  import pygame, sys 
  from pygame.locals import *
@@ -17,3 +17,10 @@
    Green = (0,255,0)
    Blue = (0,0,255)
    violet = (125,255,25)
+
+   # Setup fonts.
+   basicFont = pygame.font.SysFont(None,48)
+   textRect =text,get_rect()
+   textRect.centerx = windowSurface.get_rect().centerx
+   textRect.centerx = windowSurface.get_rect().centery
+   
