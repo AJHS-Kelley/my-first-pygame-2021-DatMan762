@@ -1,4 +1,4 @@
- # My First PyGame, Bernard Samuels, 11/30/21, 2:14, v0.2
+ # My First PyGame, Bernard Samuels, 11/30/21, 2:14, v0.3
 
  import pygame, sys 
  from pygame.locals import *
@@ -9,3 +9,11 @@
    # Setup the game window 
    windowSurface = pygame,display.set_mode((500,400)),0,32)
    pygame.display.set_caption('Hello, world')
+
+   # Setup color values.
+   BLACK = (0,0,0)
+   White = (255,255,255)
+   RED = (255,0,0)
+   Green = (0,255,0)
+   Blue = (0,0,255)
+   violet = (125,255,25)
