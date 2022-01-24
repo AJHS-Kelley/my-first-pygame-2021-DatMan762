@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.1
+# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.2
 
 import pygame, sys, time
 from pygame.locals import *
@@ -17,3 +17,5 @@ DOWNLEFT = 'downleft'
 DOWNRIGHT = 'downright'
 UPLEFT = 'upleft'
 UPRIGHT = 'upright'
+
+MOVESPEED = 4
