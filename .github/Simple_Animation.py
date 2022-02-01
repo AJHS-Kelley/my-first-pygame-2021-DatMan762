@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.8
+# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.9
 
 import pygame, sys, time
 from pygame.locals import *
@@ -72,3 +72,20 @@ Blue = (0, 0, 255)
                     b['dir'] = UPRIGHT:
                   if b['rect']. < 0:      
                   
+# the box has moved past the left. 
+                   if b['rect'] == DOWNLEFT:
+                    b['dir'] = DOWNRIGHT:
+                 if b['dir'] == UPLEFT:
+                    b['dir'] = UPRIGHT:
+                  if b['rect'].right > WINDOWWIDTH:
+                   # the box has moved past the right.
+                   if b['dir'] == DOWNRIGHT:
+                    b['dir'] = DOWNLEFT:
+                 if b['dir'] == UPRIGHT:
+                    b['dir'] = UPLEFT:
+              #Draw the box into the game surface.
+             pygame.draw.rect(windowSurface, b['color'])
+
+             # draw the window on the screen.
+             pygame.display.update()
+             time.sleep(0.02)       
