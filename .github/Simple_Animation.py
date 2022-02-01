@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.7
+# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.8
 
 import pygame, sys, time
 from pygame.locals import *
@@ -68,6 +68,7 @@ Blue = (0, 0, 255)
                     # the box has moved past the bottom.
                 if b['rect'] == DOWNLEFT:
                     b['dir'] = UPLEFT:
-                 if b['rect'] == DOWNRIGHT:
+                 if b['dir'] == DOWNRIGHT:
                     b['dir'] = UPRIGHT:
                   if b['rect']. < 0:      
+                  
