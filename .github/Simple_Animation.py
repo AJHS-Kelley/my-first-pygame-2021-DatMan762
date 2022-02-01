@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.5
+# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.6
 
 import pygame, sys, time
 from pygame.locals import *
@@ -40,3 +40,13 @@ Blue = (0, 0, 255)
          if event.type == QUIT:
              pyhame.quit()
              sys.exit()
+
+       windowSurface.fill(WHITE)
+
+       for b in boxes:
+           # Move the box data structure.
+           if b['dir'] == DOWNLEFT:
+               b['rect'].left -= MOVESPEED 
+               b['rect'].top += MOVESPEED 
+               if b['dir'] == DOWNRIGHT:
+                   b['rect'].left += MOVESPEED 
