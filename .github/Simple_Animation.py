@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.6
+# Simple Animation with PyGame, Bernard Samuels, 1/24/21, 1:49PM, v0.7
 
 import pygame, sys, time
 from pygame.locals import *
@@ -50,3 +50,24 @@ Blue = (0, 0, 255)
                b['rect'].top += MOVESPEED 
                if b['dir'] == DOWNRIGHT:
                    b['rect'].left += MOVESPEED 
+             # Move the box data structure.
+           if b['dir'] == DOWNLEFT:
+               b['rect'].left -= MOVESPEED 
+               b['rect'].top += MOVESPEED 
+               if b['dir'] == DOWNRIGHT:
+                   b['rect'].left += MOVESPEED 
+                    b['rect'].top += MOVESPEED 
+
+              if b['rect'].top < 0:
+                # the box has moved past the top.
+                if b['rect'] == UPLEFT:
+                    b['dir'] = DOWNLEFT:
+                 if b['rect'] == UPRIGHT:
+                    b['dir'] = DOWNRIGHT:   
+                if b['rect'].bottom > WINDOWHEIGHT:
+                    # the box has moved past the bottom.
+                if b['rect'] == DOWNLEFT:
+                    b['dir'] = UPLEFT:
+                 if b['rect'] == DOWNRIGHT:
+                    b['dir'] = UPRIGHT:
+                  if b['rect']. < 0:      
