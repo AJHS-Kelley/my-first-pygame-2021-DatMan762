@@ -1,4 +1,4 @@
-        # PyGame Collision Detection Practice, Bernard Samuels, february 07, 2022, 1:41pm, 0v.4
+        # PyGame Collision Detection Practice, Bernard Samuels, february 07, 2022, 1:41pm, 0v.5
 
         import pygame, sys, random
         from pygame.locals import *
@@ -27,3 +27,10 @@ foods = []
 for i in range(20):
     foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0, WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
 
+# Movement Variables
+moveLeft = False
+moveRight = False
+moveUp = False
+moveDown = False
+
+MOVESPEED = 6
